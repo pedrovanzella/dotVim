@@ -19,7 +19,7 @@ endif
 "Colors
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colorscheme Mustang
+colorscheme mustang
 
 "Remove backups from working directory
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp

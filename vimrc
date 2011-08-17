@@ -7,13 +7,19 @@ filetype on
 filetype plugin on
 filetype indent on
 
-"Command-T bindings
-noremap <leader>t <Esc>:CommandT<CR>
-noremap <leader>T <Esc>:CommandTFlush<CR>
-noremap <leader>B <Esc>:CommandTBuffer<CR>
+"Auto reload vimrc
+if has("autocmd")
+	autocmd bufwritepost vimrc source $MYVIMRC
+endif
 
 "Colors
 colorscheme Mustang
 
 "Remove backups from working directory
 set backupdir=~/.vim-tmp
+
+"Command-T bindings
+noremap <leader>t <Esc>:CommandT<CR>
+noremap <leader>T <Esc>:CommandTFlush<CR>
+noremap <leader>B <Esc>:CommandTBuffer<CR>
+

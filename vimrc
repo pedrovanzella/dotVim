@@ -22,7 +22,8 @@ let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme Mustang
 
 "Remove backups from working directory
-set backupdir=~/.vim-tmp
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 "make Y consistent with C and D
 nnoremap Y y$

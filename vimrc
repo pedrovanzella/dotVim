@@ -13,6 +13,8 @@ if has("autocmd")
 endif
 
 "Colors
+set t_Co=256
+let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme Mustang
 
 "Remove backups from working directory

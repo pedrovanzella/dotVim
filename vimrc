@@ -68,7 +68,7 @@ set wrap linebreak nolist
 set statusline=%f       "tail of the filename
 
 "Git
-set statusline+=[%{GitBranch()}]
+"set statusline+=[%{GitBranch()}]
 
 "RVM
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}

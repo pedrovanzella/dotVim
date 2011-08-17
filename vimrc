@@ -6,3 +6,6 @@ call pathogen#helptags()
 noremap <leader>t <Esc>:CommandT<CR>
 noremap <leader>T <Esc>:CommandTFlush<CR>
 noremap <leader>B <Esc>:CommandTBuffer<CR>
+
+"Colors
+colorscheme Mustang

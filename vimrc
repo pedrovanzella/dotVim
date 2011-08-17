@@ -36,6 +36,9 @@ noremap <leader>B <Esc>:CommandTBuffer<CR>
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
 
+"NERDTree bindings
+noremap <leader>p <Esc>:NERDTreeToggle<CR>
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 

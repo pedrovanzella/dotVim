@@ -8,6 +8,9 @@ filetype plugin on
 filetype indent on
 syntax on
 
+".m is objective-c, not matlab (at least for me)
+let filetype_m='objc'
+
 "Auto reload vimrc
 if has("autocmd")
 	autocmd! bufwritepost .vimrc source %

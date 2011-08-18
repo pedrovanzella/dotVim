@@ -14,3 +14,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = git://github.com/Rip-Rip/clang_complete.git

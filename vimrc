@@ -40,6 +40,12 @@ let g:CommandTMatchWindowAtTop=1
 "NERDTree bindings
 noremap <leader>p <Esc>:NERDTreeToggle<CR>
 
+"Tagbar setings
+let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+
+"Tagbar bindings
+noremap <C-t> <Esc>:TagbarToggle<CR>
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 

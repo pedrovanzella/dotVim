@@ -40,6 +40,10 @@ if has("autocmd")
 	autocmd! bufwritepost gvimrc source %
 endif
 
+"indentation
+set tabstop=4
+set shiftwidth=4
+
 "Colors
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }

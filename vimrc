@@ -1,11 +1,29 @@
-"Pathogen installation
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" Vundle installation
+set nocompatible               " be iMproved
+filetype on			" OSX workaround
+filetype off                   " required!
 
-"Filetypes
-filetype on
-filetype plugin on
-filetype indent on
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My vundles go here
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Rip-Rip/clang_complete'
+Bundle 'godlygeek/csapprox'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+" vim-scripts repos
+Bundle 'rails.vim'
+" non github repos
+Bundle 'git://git.wincent.com/command-t.git'
+
+filetype plugin indent on     " required!
+
 syntax on
 
 ".m is objective-c, not matlab (at least for me)

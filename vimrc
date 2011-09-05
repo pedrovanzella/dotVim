@@ -26,6 +26,9 @@ filetype plugin indent on     " required!
 
 syntax on
 
+"Omnicomplete
+set ofu=syntaxcomplete#Complete
+
 ".m is objective-c, not matlab (at least for me)
 let filetype_m='objc'
 

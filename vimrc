@@ -44,13 +44,6 @@ endif
 set tabstop=4
 set shiftwidth=4
 
-"ruby indentation
-au BufRead,BufNewFile *.rb
-			\   set expandtab
-			\ | set softtabstop=3
-			\ | set tabstop=3
-			\ | set shiftwidth=3
-
 
 "Colors
 set t_Co=256

@@ -18,7 +18,7 @@ Bundle 'godlygeek/csapprox'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'
-
+Bundle 'kevinw/pyflakes-vim'
 " vim-scripts repos
 Bundle 'rails.vim'
 " non github repos

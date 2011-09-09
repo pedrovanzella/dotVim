@@ -19,6 +19,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'
 Bundle 'kevinw/pyflakes-vim'
+Bundle 'vim-scripts/SuperTab-continued.'
 " vim-scripts repos
 Bundle 'rails.vim'
 " non github repos
@@ -30,6 +31,9 @@ syntax on
 
 "Omnicomplete
 set ofu=syntaxcomplete#Complete
+
+"SuperTab
+let g:SuperTabDefaultCompletionType = "context"
 
 ".m is objective-c, not matlab (at least for me)
 let filetype_m='objc'

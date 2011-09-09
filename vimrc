@@ -20,6 +20,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'
 Bundle 'kevinw/pyflakes-vim'
 Bundle 'vim-scripts/SuperTab-continued.'
+Bundle 'majutsushi/tagbar'
 " vim-scripts repos
 Bundle 'rails.vim'
 " non github repos
@@ -79,7 +80,8 @@ noremap <leader>p <Esc>:NERDTreeToggle<CR>
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 
 "Tagbar bindings
-noremap <C-t> <Esc>:TagbarToggle<CR>
+let g:tagbar_usearrows = 1
+nnoremap <leader>l :TagbarToggle<CR>
 
 "clang_complete options
 let g:clang_complete_copen=1

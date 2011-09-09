@@ -1,0 +1,5 @@
+When cloning this repository, you should also clone Vundle (for some reason, it does not come properly bundled)
+
+git clone http://github.com/gmarik/vundle.git bundle/vundle
+
+Then, open vim and run a :BundleInstall! to make sure all scripts are installed and up-to-date.

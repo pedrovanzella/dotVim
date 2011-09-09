@@ -17,6 +17,8 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'godlygeek/csapprox'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Raimondi/delimitMate'
+
 " vim-scripts repos
 Bundle 'rails.vim'
 " non github repos

@@ -21,6 +21,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'kevinw/pyflakes-vim'
 Bundle 'vim-scripts/SuperTab-continued.'
 Bundle 'majutsushi/tagbar'
+Bundle 'tpope/vim-pastie'
 " vim-scripts repos
 Bundle 'rails.vim'
 " non github repos

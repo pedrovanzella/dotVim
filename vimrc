@@ -24,8 +24,12 @@ Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-pastie'
 Bundle 'godlygeek/tabular'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-endwise'
 " vim-scripts repos
-Bundle 'rails.vim'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 

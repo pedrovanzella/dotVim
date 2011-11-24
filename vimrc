@@ -22,6 +22,8 @@ Bundle 'kevinw/pyflakes-vim'
 Bundle 'vim-scripts/SuperTab-continued.'
 Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-pastie'
+Bundle 'godlygeek/tabular'
+Bundle 'vim-ruby/vim-ruby'
 " vim-scripts repos
 Bundle 'rails.vim'
 " non github repos

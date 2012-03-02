@@ -29,6 +29,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
+Bundle 'tangledhelix/vim-octopress'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'

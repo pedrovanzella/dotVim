@@ -121,9 +121,6 @@ set wrap linebreak nolist
 "statusline setup
 set statusline=%f       "tail of the filename
 
-"Git
-"set statusline+=[%{GitBranch()}]
-
 "RVM
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
 

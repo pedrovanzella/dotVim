@@ -30,6 +30,7 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tangledhelix/vim-octopress'
+Bundle 'millermedeiros/vim-statline'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
@@ -138,3 +139,4 @@ set statusline+=%h      "help file flag
 set statusline+=%y      "filetype
 set statusline+=%r      "read only flag
 set statusline+=%m      "modified flag
+

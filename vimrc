@@ -42,6 +42,30 @@ filetype plugin indent on     " required!
 
 syntax on
 
+set number 						"just making sure
+set backspace=indent,eol,start  "Allow backspace in insert mode
+set history=1000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+set gcr=a:blinkon0              "Disable cursor blink
+set visualbell                  "No sounds
+set autoread                    "Reload files changed outside vim
+
+" This makes vim act like all other editors, buffers can
+" exist in the background without being in a window.
+" http://items.sjbach.com/319/configuring-vim-right
+set hidden
+
+" ================ Persistent Undo ==================
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
+set undodir=~/.vim/backups
+set undofile
+
+" ================ Search Settings  =================
+set incsearch        "Find the next match as we type the search
+set hlsearch         "Hilight searches by default
+set viminfo='100,f1  "Save up to 100 marks, enable capital marks
+
 "Omnicomplete
 set ofu=syntaxcomplete#Complete
 
@@ -70,6 +94,7 @@ let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme mustang
 
 "Font
+"https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
 set guifont=Inconsolata-dz\ for\ Powerline:h11
 
 "Remove backups from working directory
@@ -126,5 +151,4 @@ set wrap linebreak nolist
 
 "PowerLine
 let g:Powerline_symbos = 'fancy'
-
 

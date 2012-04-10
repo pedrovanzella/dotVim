@@ -2,6 +2,8 @@
 set nocompatible               " be iMproved
 filetype on			" OSX workaround
 filetype off                   " required!
+set laststatus=2
+set encoding=utf-8
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -30,7 +32,8 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tangledhelix/vim-octopress'
-Bundle 'millermedeiros/vim-statline'
+"Bundle 'millermedeiros/vim-statline'
+Bundle 'Lokaltog/vim-powerline'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
@@ -118,25 +121,7 @@ set number      "add line numbers
 set showbreak=...
 set wrap linebreak nolist
 
-"Statusbard
-"statusline setup
-set statusline=%f       "tail of the filename
+"PowerLine
+let g:Powerline_symbos = 'fancy'
 
-"RVM
-set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
-
-"display a warning if fileformat isnt unix
-set statusline+=%#warningmsg#
-set statusline+=%{&ff!='unix'?'['.&ff.']':''}
-set statusline+=%*
-
-"Display a warning if file encoding isnt utf-8
-set statusline+=%#warningmsg#
-set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
-set statusline+=%*
-
-set statusline+=%h      "help file flag
-set statusline+=%y      "filetype
-set statusline+=%r      "read only flag
-set statusline+=%m      "modified flag
 

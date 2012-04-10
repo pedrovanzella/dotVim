@@ -32,7 +32,6 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tangledhelix/vim-octopress'
-"Bundle 'millermedeiros/vim-statline'
 Bundle 'Lokaltog/vim-powerline'
 " vim-scripts repos
 " non github repos

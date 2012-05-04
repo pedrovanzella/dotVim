@@ -33,6 +33,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tangledhelix/vim-octopress'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-scripts/haskell.vim'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'

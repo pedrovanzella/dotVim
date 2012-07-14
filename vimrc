@@ -35,6 +35,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-scripts/haskell.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neocomplcache-snippets-complete'
+Bundle 'kchmck/vim-coffee-script'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'

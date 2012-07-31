@@ -75,6 +75,10 @@ set viminfo='100,f1  "Save up to 100 marks, enable capital marks
 ".m is objective-c, not matlab (at least for me)
 let filetype_m='objc'
 
+" Treat scss and sass as css
+au BufRead,BufNewFile *.scss set filetype=css
+au BufRead,BufNewFile *.sass set filetype=css
+
 "Auto reload vimrc
 if has("autocmd")
 	autocmd! bufwritepost .vimrc source %

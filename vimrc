@@ -38,6 +38,7 @@ Bundle 'Shougo/neocomplcache-snippets-complete'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'skammer/vim-css-color'
+Bundle 'othree/html5.vim'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'

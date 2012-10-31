@@ -156,7 +156,7 @@ set showbreak=...
 set wrap linebreak nolist
 
 "PowerLine
-let g:Powerline_symbos = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 " neocomplcache
 " Disable AutoComplPop.

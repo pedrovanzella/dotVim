@@ -39,6 +39,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'skammer/vim-css-color'
 Bundle 'othree/html5.vim'
+Bundle 'osyo-manga/neocomplcache-clang_complete'
 " vim-scripts repos
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
@@ -205,3 +206,11 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'"
+
+" use neocomplcache & clang_complete
+
+" add neocomplcache option
+let g:neocomplcache_force_overwrite_completefunc=1
+
+" add clang_complete option
+let g:clang_complete_auto=1

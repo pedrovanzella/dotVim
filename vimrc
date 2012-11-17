@@ -131,6 +131,7 @@ nnoremap <leader>l :TagbarToggle<CR>
 
 "clang_complete options
 let g:clang_complete_copen=1
+let g:clang_use_library=1 "Use libclang for greater speeds
 
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start

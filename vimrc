@@ -119,12 +119,12 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 
 "Exclude files from listing
-set wildignore+=*/tmp/*,*.so,*.swp,*zip,*.tar.gz
+set wildignore+=*/tmp/*,*.so,*.swp,*zip,*.tar.gz,*.pyc
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
+  \ 'file': '\v\.(exe|so|dll|pyc)$',
+  \ 'link': '',
   \ }
 
 "NERDTree bindings

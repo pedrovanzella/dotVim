@@ -54,6 +54,7 @@ set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
 set autoread                    "Reload files changed outside vim
 
+"leader-n switches between absolute and relative numbering
 nnoremap <Leader>n :se <c-r>=&rnu?"":"r"<CR>nu<CR>
 
 " This makes vim act like all other editors, buffers can

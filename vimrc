@@ -40,9 +40,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'skammer/vim-css-color'
 Bundle 'othree/html5.vim'
 Bundle 'osyo-manga/neocomplcache-clang_complete'
-" vim-scripts repos
-" non github repos
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on     " required!
 
@@ -110,14 +108,23 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 "make Y consistent with C and D
 nnoremap Y y$
 
-"Command-T bindings
-noremap <leader>t <Esc>:CommandT<CR>
-noremap <leader>T <Esc>:CommandTFlush<CR>
-noremap <leader>B <Esc>:CommandTBuffer<CR>
+"Ctrlp settings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
-"Command-T Config
-let g:CommandTMaxHeight=10
-let g:CommandTMatchWindowAtTop=1
+"When ctrlp opens, set the working dir as the nearest ancestor that contains a
+".git dir, but only if the current working dir outsite ctrlp is not a direct
+"ancestor of the directory of the current file (woosh)
+let g:ctrlp_working_path_mode = 'ra'
+
+"Exclude files from listing
+set wildignore+=*/tmp/*,*.so,*.swp,*zip,*.tar.gz
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 "NERDTree bindings
 noremap <leader>p <Esc>:NERDTreeToggle<CR>

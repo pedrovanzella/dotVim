@@ -31,7 +31,6 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-endwise'
 Bundle 'tangledhelix/vim-octopress'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-scripts/haskell.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/neosnippet'
@@ -41,6 +40,7 @@ Bundle 'skammer/vim-css-color'
 Bundle 'othree/html5.vim'
 Bundle 'osyo-manga/neocomplcache-clang_complete'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/powerline'
 
 filetype plugin indent on     " required!
 
@@ -98,9 +98,12 @@ set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme mustang
 
+"Powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 "Font
 "https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
-set guifont=Inconsolata-dz\ for\ Powerline:h11
+set guifont=Inconsolata\ for\ Powerline:h14
 
 "Remove backups from working directory
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp

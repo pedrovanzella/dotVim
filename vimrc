@@ -41,6 +41,8 @@ Bundle 'othree/html5.vim'
 Bundle 'osyo-manga/neocomplcache-clang_complete'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/powerline'
+Bundle 'tpope/vim-markdown'
+Bundle 'jtratner/vim-flavored-markdown'
 
 filetype plugin indent on     " required!
 
@@ -61,6 +63,12 @@ nnoremap <Leader>n :se <c-r>=&rnu?"":"r"<CR>nu<CR>
 " exist in the background without being in a window.
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
+
+" Markdown
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.

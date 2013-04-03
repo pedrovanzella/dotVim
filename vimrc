@@ -44,6 +44,7 @@ Bundle 'Lokaltog/powerline'
 Bundle 'tpope/vim-markdown'
 Bundle 'jtratner/vim-flavored-markdown'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'klen/python-mode'
 
 filetype plugin indent on     " required!
 
@@ -72,8 +73,8 @@ augroup markdown
 augroup END
 
 " Python
-" pep-8 indenting
-au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+" python-mode has linting, so we'll disable syntastic's linting for python
+let g:syntastic_python_checkers=[]
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.

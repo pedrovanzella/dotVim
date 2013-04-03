@@ -43,6 +43,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/powerline'
 Bundle 'tpope/vim-markdown'
 Bundle 'jtratner/vim-flavored-markdown'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " required!
 
@@ -69,6 +70,10 @@ augroup markdown
     au!
     au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
+
+" Python
+" pep-8 indenting
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
@@ -104,7 +109,9 @@ set shiftwidth=4
 "Colors
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colorscheme mustang
+syntax enable
+set background=dark
+colorscheme solarized
 
 "Powerline
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim

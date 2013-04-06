@@ -45,6 +45,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'jtratner/vim-flavored-markdown'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'klen/python-mode'
+Bundle 'mattn/zencoding-vim'
 
 filetype plugin indent on     " required!
 
